@@ -84,6 +84,7 @@ body {
 .skills-card-container:hover > .skills-card {
   margin-top: 0;
   margin-bottom: 30px;
+  transform: rotate(3deg);
 }
 
 .skills-card-image-container {
