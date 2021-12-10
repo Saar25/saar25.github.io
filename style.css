@@ -4,8 +4,9 @@ body {
 }
 
 body {
-  font-family: "Open Sans", serif;
-  background-color: wheat;
+  font-family: "Open Sans", "Nunito", serif;
+  background-color: #2d2d2d;
+  color: white;
 }
 
 .header {
@@ -15,7 +16,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px 0 black;
+
+  padding: 20px 50px;
 
   display: flex;
   align-items: center;
@@ -27,7 +39,6 @@ body {
   font-size: 48px;
   font-weight: bold;
   margin: 10px 0;
-  text-shadow: 4px 4px black;
 }
 
 .header-sub-title {
@@ -35,21 +46,21 @@ body {
 }
 
 .content {
-  margin: 30px 25% 0;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
 }
 
-.content-article {
-  margin: 20px 0;
+.content-section {
+  margin: 20px 20%;
 }
 
-.content-article-title {
+.content-section-title {
   font-size: 24px;
   font-weight: bold;
 }
 
-.content-article-body {
+.content-section-body {
   font-size: 24px;
 }
 
@@ -65,8 +76,7 @@ body {
   padding: 20px;
 
   background-color: rgb(45, 45, 45);
-  color: white;
-  border-radius: 40% / 20%;
+  border-radius: 30px;
   box-shadow: black 5px 5px 20px 0px;
 
   display: flex;
