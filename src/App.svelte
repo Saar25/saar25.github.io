@@ -1,23 +1,48 @@
 <script lang="ts">
+	import { fade, fly } from "svelte/transition";
+
 	import Card from "./components/Card.svelte";
 
 	const cards = [
-		{ path: "public/assets/angular-logo.png", title: "Angular" },
-		{ path: "public/assets/nodejs-logo.png", title: "NodeJs" },
-		{ path: "public/assets/java-logo.png", title: "Java" },
-		{ path: "public/assets/kotlin-logo.svg", title: "Kotlin" },
-		{ path: "public/assets/ts-logo.png", title: "Typescript" },
-		{ path: "public/assets/sql-logo.png", title: "SQL" },
-		{ path: "public/assets/react-logo.png", title: "React" },
-		{ path: "public/assets/git-logo.png", title: "Git" },
-		{ path: "public/assets/nestjs-logo.svg", title: "NestJs" },
-		{ path: "public/assets/scss-logo.png", title: "Scss" },
-		{ path: "public/assets/lwjgl-logo.svg", title: "Lwjgl" },
-		{ path: "public/assets/blender-logo.svg", title: "Blender" },
+		{ path: "assets/logos/angular-logo.png", title: "Angular" },
+		{ path: "assets/logos/nodejs-logo.png", title: "NodeJs" },
+		{ path: "assets/logos/java-logo.png", title: "Java" },
+		{ path: "assets/logos/kotlin-logo.svg", title: "Kotlin" },
+		{ path: "assets/logos/ts-logo.png", title: "Typescript" },
+		{ path: "assets/logos/sql-logo.png", title: "SQL" },
+		{ path: "assets/logos/react-logo.png", title: "React" },
+		{ path: "assets/logos/git-logo.png", title: "Git" },
+		{ path: "assets/logos/nestjs-logo.svg", title: "NestJs" },
+		{ path: "assets/logos/scss-logo.png", title: "Scss" },
+		{ path: "assets/logos/lwjgl-logo.svg", title: "Lwjgl" },
+		{ path: "assets/logos/blender-logo.svg", title: "Blender" },
 	];
+
+	const backgrounds = [
+		"https://raw.githubusercontent.com/Saar25/Lwjgl/master/docs/Amanecer.png",
+		"assets/backgrounds/ParticlesSphere.png",
+	];
+
+	let backgroundIndex = 0;
+
+	const incBackgroundIndex = () => {
+		backgroundIndex = (backgroundIndex + 1) % backgrounds.length;
+	};
 </script>
 
 <header class="header">
+	{#each backgrounds as background, i}
+		{#if backgroundIndex == i}
+			<img
+				class="header-image"
+				src={background}
+				alt="background"
+				in:fly={{ x: 1000, opacity: 0, duration: 1000 }}
+				out:fly={{ x: -1000, opacity: 0, duration: 1000 }}
+				on:click={incBackgroundIndex}
+			/>
+		{/if}
+	{/each}
 	<article class="header-content">
 		<h1 class="header-title">Saar25 Github Website</h1>
 		<sub class="header-sub-title">This is me</sub>
@@ -54,16 +79,21 @@
 	.header {
 		width: 100%;
 		height: 65vh;
-		background-image: url("https://raw.githubusercontent.com/Saar25/Lwjgl/master/docs/Amanecer.png");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		box-shadow: black 0 0 15px;
 
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		position: relative;
+		overflow: hidden;
+	}
+
+	.header-image {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.header-content {
@@ -90,13 +120,15 @@
 	}
 
 	.main {
-		margin: 30px 0;
 		display: flex;
 		flex-direction: column;
+		padding-top: 20px;
+
+		box-shadow: 0 22px 15px -15px black inset;
 	}
 
 	.content-section {
-		margin: 20px 20%;
+		padding: 50px 25%;
 	}
 
 	.content-section-title {
