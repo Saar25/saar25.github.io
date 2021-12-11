@@ -3,23 +3,23 @@
 	import Card from "./components/Card.svelte";
 
 	const cards = [
-		{ path: "assets/logos/angular-logo.png", title: "Angular" },
-		{ path: "assets/logos/nodejs-logo.png", title: "NodeJs" },
-		{ path: "assets/logos/java-logo.png", title: "Java" },
-		{ path: "assets/logos/kotlin-logo.svg", title: "Kotlin" },
-		{ path: "assets/logos/ts-logo.png", title: "Typescript" },
-		{ path: "assets/logos/sql-logo.png", title: "SQL" },
-		{ path: "assets/logos/react-logo.png", title: "React" },
-		{ path: "assets/logos/git-logo.png", title: "Git" },
-		{ path: "assets/logos/nestjs-logo.svg", title: "NestJs" },
-		{ path: "assets/logos/scss-logo.png", title: "Scss" },
-		{ path: "assets/logos/lwjgl-logo.svg", title: "Lwjgl" },
-		{ path: "assets/logos/blender-logo.svg", title: "Blender" },
+		{ path: "public/assets/logos/angular-logo.png", title: "Angular" },
+		{ path: "public/assets/logos/nodejs-logo.png", title: "NodeJs" },
+		{ path: "public/assets/logos/java-logo.png", title: "Java" },
+		{ path: "public/assets/logos/kotlin-logo.svg", title: "Kotlin" },
+		{ path: "public/assets/logos/ts-logo.png", title: "Typescript" },
+		{ path: "public/assets/logos/sql-logo.png", title: "SQL" },
+		{ path: "public/assets/logos/react-logo.png", title: "React" },
+		{ path: "public/assets/logos/git-logo.png", title: "Git" },
+		{ path: "public/assets/logos/nestjs-logo.svg", title: "NestJs" },
+		{ path: "public/assets/logos/scss-logo.png", title: "Scss" },
+		{ path: "public/assets/logos/lwjgl-logo.svg", title: "Lwjgl" },
+		{ path: "public/assets/logos/blender-logo.svg", title: "Blender" },
 	];
 
 	const backgrounds = [
 		"https://raw.githubusercontent.com/Saar25/Lwjgl/master/docs/Amanecer.png",
-		"assets/backgrounds/ParticlesSphere.png",
+		"public/assets/backgrounds/ParticlesSphere.png",
 	];
 
 	let backgroundIndex = 0;
