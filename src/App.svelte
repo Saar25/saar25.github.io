@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { fade, fly } from "svelte/transition";
-
+	import { fly } from "svelte/transition";
 	import Card from "./components/Card.svelte";
 
 	const cards = [
@@ -25,9 +24,17 @@
 
 	let backgroundIndex = 0;
 
+	let timeout: NodeJS.Timeout;
+
 	const incBackgroundIndex = () => {
+		clearTimeout(timeout);
+
 		backgroundIndex = (backgroundIndex + 1) % backgrounds.length;
+
+		timeout = setTimeout(incBackgroundIndex, 5000);
 	};
+
+	timeout = setTimeout(incBackgroundIndex, 5000);
 </script>
 
 <header class="header">
@@ -37,8 +44,8 @@
 				class="header-image"
 				src={background}
 				alt="background"
-				in:fly={{ x: 1000, opacity: 0, duration: 1000 }}
-				out:fly={{ x: -1000, opacity: 0, duration: 1000 }}
+				in:fly={{ x: 1000, opacity: 0, duration: 2000 }}
+				out:fly={{ x: -1000, opacity: 0, duration: 2000 }}
 				on:click={incBackgroundIndex}
 			/>
 		{/if}
