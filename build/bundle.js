@@ -790,18 +790,18 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[7] = list[i];
-    	child_ctx[9] = i;
+    	child_ctx[8] = list[i];
+    	child_ctx[10] = i;
     	return child_ctx;
     }
 
-    // (29:2) {#if backgroundIndex == i}
+    // (33:2) {#if backgroundIndex == i}
     function create_if_block(ctx) {
     	let img;
     	let img_src_value;
@@ -815,9 +815,9 @@ var app = (function () {
     		c: function create() {
     			img = element("img");
     			attr_dev(img, "class", "header-image svelte-aflrjp");
-    			if (!src_url_equal(img.src, img_src_value = /*background*/ ctx[7])) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = /*background*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "background");
-    			add_location(img, file, 29, 3, 1243);
+    			add_location(img, file, 33, 3, 1383);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -834,7 +834,7 @@ var app = (function () {
 
     			add_render_callback(() => {
     				if (img_outro) img_outro.end(1);
-    				img_intro = create_in_transition(img, fly, { x: 1000, opacity: 0, duration: 1000 });
+    				img_intro = create_in_transition(img, fly, { x: 1000, opacity: 0, duration: 2000 });
     				img_intro.start();
     			});
 
@@ -842,7 +842,7 @@ var app = (function () {
     		},
     		o: function outro(local) {
     			if (img_intro) img_intro.invalidate();
-    			img_outro = create_out_transition(img, fly, { x: -1000, opacity: 0, duration: 1000 });
+    			img_outro = create_out_transition(img, fly, { x: -1000, opacity: 0, duration: 2000 });
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -857,18 +857,18 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(29:2) {#if backgroundIndex == i}",
+    		source: "(33:2) {#if backgroundIndex == i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (28:1) {#each backgrounds as background, i}
+    // (32:1) {#each backgrounds as background, i}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*backgroundIndex*/ ctx[0] == /*i*/ ctx[9] && create_if_block(ctx);
+    	let if_block = /*backgroundIndex*/ ctx[0] == /*i*/ ctx[10] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -881,7 +881,7 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if (/*backgroundIndex*/ ctx[0] == /*i*/ ctx[9]) {
+    			if (/*backgroundIndex*/ ctx[0] == /*i*/ ctx[10]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
 
@@ -923,20 +923,20 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(28:1) {#each backgrounds as background, i}",
+    		source: "(32:1) {#each backgrounds as background, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (65:3) {#each cards as card}
+    // (69:3) {#each cards as card}
     function create_each_block(ctx) {
     	let card;
     	let current;
 
     	card = new Card({
-    			props: { card: /*card*/ ctx[4] },
+    			props: { card: /*card*/ ctx[5] },
     			$$inline: true
     		});
 
@@ -967,7 +967,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(65:3) {#each cards as card}",
+    		source: "(69:3) {#each cards as card}",
     		ctx
     	});
 
@@ -1059,29 +1059,29 @@ var app = (function () {
     			}
 
     			attr_dev(h1, "class", "header-title svelte-aflrjp");
-    			add_location(h1, file, 40, 2, 1516);
+    			add_location(h1, file, 44, 2, 1656);
     			attr_dev(sub, "class", "header-sub-title svelte-aflrjp");
-    			add_location(sub, file, 41, 2, 1570);
+    			add_location(sub, file, 45, 2, 1710);
     			attr_dev(article, "class", "header-content svelte-aflrjp");
-    			add_location(article, file, 39, 1, 1481);
+    			add_location(article, file, 43, 1, 1621);
     			attr_dev(header, "class", "header svelte-aflrjp");
-    			add_location(header, file, 26, 0, 1149);
+    			add_location(header, file, 30, 0, 1289);
     			attr_dev(span0, "class", "content-section-title svelte-aflrjp");
-    			add_location(span0, file, 47, 2, 1706);
-    			add_location(p0, file, 49, 3, 1802);
-    			add_location(p1, file, 53, 3, 1915);
+    			add_location(span0, file, 51, 2, 1846);
+    			add_location(p0, file, 53, 3, 1942);
+    			add_location(p1, file, 57, 3, 2055);
     			attr_dev(section0, "class", "content-section-body svelte-aflrjp");
-    			add_location(section0, file, 48, 2, 1760);
+    			add_location(section0, file, 52, 2, 1900);
     			attr_dev(section1, "class", "about-me content-section svelte-aflrjp");
-    			add_location(section1, file, 46, 1, 1661);
+    			add_location(section1, file, 50, 1, 1801);
     			attr_dev(span1, "class", "content-section-title svelte-aflrjp");
-    			add_location(span1, file, 62, 2, 2137);
+    			add_location(span1, file, 66, 2, 2277);
     			attr_dev(section2, "class", "skills-body content-section-body svelte-aflrjp");
-    			add_location(section2, file, 63, 2, 2192);
+    			add_location(section2, file, 67, 2, 2332);
     			attr_dev(section3, "class", "skills content-section svelte-aflrjp");
-    			add_location(section3, file, 61, 1, 2094);
+    			add_location(section3, file, 65, 1, 2234);
     			attr_dev(main, "class", "main svelte-aflrjp");
-    			add_location(main, file, 45, 0, 1640);
+    			add_location(main, file, 49, 0, 1780);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1285,11 +1285,15 @@ var app = (function () {
     	];
 
     	let backgroundIndex = 0;
+    	let timeout;
 
     	const incBackgroundIndex = () => {
+    		clearTimeout(timeout);
     		$$invalidate(0, backgroundIndex = (backgroundIndex + 1) % backgrounds.length);
+    		timeout = setTimeout(incBackgroundIndex, 5000);
     	};
 
+    	timeout = setTimeout(incBackgroundIndex, 5000);
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -1302,11 +1306,13 @@ var app = (function () {
     		cards,
     		backgrounds,
     		backgroundIndex,
+    		timeout,
     		incBackgroundIndex
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('backgroundIndex' in $$props) $$invalidate(0, backgroundIndex = $$props.backgroundIndex);
+    		if ('timeout' in $$props) timeout = $$props.timeout;
     	};
 
     	if ($$props && "$$inject" in $$props) {
