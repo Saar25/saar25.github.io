@@ -822,7 +822,7 @@ var app = (function () {
     			attr_dev(img, "class", "header-image svelte-aflrjp");
     			if (!src_url_equal(img.src, img_src_value = /*background*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "background");
-    			add_location(img, file, 33, 3, 1383);
+    			add_location(img, file, 33, 3, 1323);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1064,29 +1064,29 @@ var app = (function () {
     			}
 
     			attr_dev(h1, "class", "header-title svelte-aflrjp");
-    			add_location(h1, file, 44, 2, 1656);
+    			add_location(h1, file, 44, 2, 1596);
     			attr_dev(sub, "class", "header-sub-title svelte-aflrjp");
-    			add_location(sub, file, 45, 2, 1710);
+    			add_location(sub, file, 45, 2, 1650);
     			attr_dev(article, "class", "header-content svelte-aflrjp");
-    			add_location(article, file, 43, 1, 1621);
+    			add_location(article, file, 43, 1, 1561);
     			attr_dev(header, "class", "header svelte-aflrjp");
-    			add_location(header, file, 30, 0, 1289);
+    			add_location(header, file, 30, 0, 1229);
     			attr_dev(span0, "class", "content-section-title svelte-aflrjp");
-    			add_location(span0, file, 51, 2, 1846);
-    			add_location(p0, file, 53, 3, 1942);
-    			add_location(p1, file, 57, 3, 2055);
+    			add_location(span0, file, 51, 2, 1786);
+    			add_location(p0, file, 53, 3, 1882);
+    			add_location(p1, file, 57, 3, 1995);
     			attr_dev(section0, "class", "content-section-body svelte-aflrjp");
-    			add_location(section0, file, 52, 2, 1900);
+    			add_location(section0, file, 52, 2, 1840);
     			attr_dev(section1, "class", "about-me content-section svelte-aflrjp");
-    			add_location(section1, file, 50, 1, 1801);
+    			add_location(section1, file, 50, 1, 1741);
     			attr_dev(span1, "class", "content-section-title svelte-aflrjp");
-    			add_location(span1, file, 66, 2, 2277);
+    			add_location(span1, file, 66, 2, 2217);
     			attr_dev(section2, "class", "skills-body content-section-body svelte-aflrjp");
-    			add_location(section2, file, 67, 2, 2332);
+    			add_location(section2, file, 67, 2, 2272);
     			attr_dev(section3, "class", "skills content-section svelte-aflrjp");
-    			add_location(section3, file, 65, 1, 2234);
+    			add_location(section3, file, 65, 1, 2174);
     			attr_dev(main, "class", "main svelte-aflrjp");
-    			add_location(main, file, 49, 0, 1780);
+    			add_location(main, file, 49, 0, 1720);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1235,51 +1235,51 @@ var app = (function () {
 
     	const cards = [
     		{
-    			path: "assets/logos/angular-logo.png",
+    			path: "assets/logos/angular.png",
     			title: "Angular"
     		},
     		{
-    			path: "assets/logos/nodejs-logo.png",
+    			path: "assets/logos/nodejs.png",
     			title: "NodeJs"
     		},
     		{
-    			path: "assets/logos/java-logo.png",
+    			path: "assets/logos/java.png",
     			title: "Java"
     		},
     		{
-    			path: "assets/logos/kotlin-logo.svg",
+    			path: "assets/logos/kotlin.svg",
     			title: "Kotlin"
     		},
     		{
-    			path: "assets/logos/ts-logo.png",
+    			path: "assets/logos/ts.png",
     			title: "Typescript"
     		},
     		{
-    			path: "assets/logos/sql-logo.png",
+    			path: "assets/logos/sql.png",
     			title: "SQL"
     		},
     		{
-    			path: "assets/logos/react-logo.png",
+    			path: "assets/logos/react.png",
     			title: "React"
     		},
     		{
-    			path: "assets/logos/git-logo.png",
+    			path: "assets/logos/git.png",
     			title: "Git"
     		},
     		{
-    			path: "assets/logos/nestjs-logo.svg",
+    			path: "assets/logos/nestjs.svg",
     			title: "NestJs"
     		},
     		{
-    			path: "assets/logos/scss-logo.png",
+    			path: "assets/logos/scss.png",
     			title: "Scss"
     		},
     		{
-    			path: "assets/logos/lwjgl-logo.svg",
+    			path: "assets/logos/lwjgl.svg",
     			title: "Lwjgl"
     		},
     		{
-    			path: "assets/logos/blender-logo.svg",
+    			path: "assets/logos/blender.svg",
     			title: "Blender"
     		}
     	];
