@@ -684,17 +684,17 @@ var app = (function () {
     			t0 = space();
     			span = element("span");
     			t1 = text(t1_value);
-    			attr_dev(img, "class", "card-image svelte-1vk8m2j");
+    			attr_dev(img, "class", "card-image svelte-4s2omq");
     			if (!src_url_equal(img.src, img_src_value = /*card*/ ctx[0].path)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "logo");
     			add_location(img, file$1, 7, 12, 185);
-    			attr_dev(div0, "class", "card-image-container svelte-1vk8m2j");
+    			attr_dev(div0, "class", "card-image-container svelte-4s2omq");
     			add_location(div0, file$1, 6, 8, 138);
     			attr_dev(span, "class", "card-title");
     			add_location(span, file$1, 9, 8, 262);
-    			attr_dev(div1, "class", "card-rotation svelte-1vk8m2j");
+    			attr_dev(div1, "class", "card-rotation svelte-4s2omq");
     			add_location(div1, file$1, 5, 4, 102);
-    			attr_dev(article, "class", "card-container svelte-1vk8m2j");
+    			attr_dev(article, "class", "card-container svelte-4s2omq");
     			add_location(article, file$1, 4, 0, 65);
     		},
     		l: function claim(nodes) {
