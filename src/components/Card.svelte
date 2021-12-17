@@ -17,7 +17,7 @@
     .card-container {
         .card-rotation {
             transition: 200ms;
-            margin: 15px 10px;
+            margin: 30px 10px 0;
             aspect-ratio: 0.618;
             padding: 20px;
 
