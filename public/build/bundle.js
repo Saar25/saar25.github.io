@@ -666,7 +666,8 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let article;
-    	let div;
+    	let div1;
+    	let div0;
     	let img;
     	let img_src_value;
     	let t0;
@@ -677,20 +678,23 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			article = element("article");
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
     			img = element("img");
     			t0 = space();
     			span = element("span");
     			t1 = text(t1_value);
-    			attr_dev(img, "class", "card-image svelte-1ro67x3");
+    			attr_dev(img, "class", "card-image svelte-1vk8m2j");
     			if (!src_url_equal(img.src, img_src_value = /*card*/ ctx[0].path)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "logo");
-    			add_location(img, file$1, 6, 8, 145);
-    			attr_dev(div, "class", "card-image-container svelte-1ro67x3");
-    			add_location(div, file$1, 5, 4, 102);
+    			add_location(img, file$1, 7, 12, 185);
+    			attr_dev(div0, "class", "card-image-container svelte-1vk8m2j");
+    			add_location(div0, file$1, 6, 8, 138);
     			attr_dev(span, "class", "card-title");
-    			add_location(span, file$1, 8, 4, 214);
-    			attr_dev(article, "class", "card-container svelte-1ro67x3");
+    			add_location(span, file$1, 9, 8, 262);
+    			attr_dev(div1, "class", "card-rotation svelte-1vk8m2j");
+    			add_location(div1, file$1, 5, 4, 102);
+    			attr_dev(article, "class", "card-container svelte-1vk8m2j");
     			add_location(article, file$1, 4, 0, 65);
     		},
     		l: function claim(nodes) {
@@ -698,10 +702,11 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
-    			append_dev(article, div);
-    			append_dev(div, img);
-    			append_dev(article, t0);
-    			append_dev(article, span);
+    			append_dev(article, div1);
+    			append_dev(div1, div0);
+    			append_dev(div0, img);
+    			append_dev(div1, t0);
+    			append_dev(div1, span);
     			append_dev(span, t1);
     		},
     		p: function update(ctx, [dirty]) {

@@ -5,34 +5,38 @@
 </script>
 
 <article class="card-container">
-    <div class="card-image-container">
-        <img class="card-image" src={card.path} alt="logo" />
+    <div class="card-rotation">
+        <div class="card-image-container">
+            <img class="card-image" src={card.path} alt="logo" />
+        </div>
+        <span class="card-title">{card.title}</span>
     </div>
-    <span class="card-title">{card.title}</span>
 </article>
 
 <style lang="scss">
     .card-container {
-        aspect-ratio: 0.618;
-        padding: 20px;
+        .card-rotation {
+            transition: 200ms;
+            margin: 15px 10px;
+            aspect-ratio: 0.618;
+            padding: 20px;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
 
-        border-radius: 30px;
-        background-color: #2d2d2d;
-        box-shadow: black 5px 5px 20px 0px;
-
-        transition: 200ms;
-
-        margin: 30px 10px 0 10px;
+            border-radius: 30px;
+            background-color: #2d2d2d;
+            box-shadow: black 5px 5px 20px 0px;
+        }
 
         &:hover {
-            margin-top: 0;
-            margin-bottom: 30px;
-            transform: rotate(3deg);
+            .card-rotation {
+                margin-top: 0;
+                margin-bottom: 30px;
+                transform: rotate(3deg);
+            }
         }
 
         .card-image-container {
