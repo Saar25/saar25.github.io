@@ -153,4 +153,8 @@
 		grid-row-gap: 10px;
 		justify-content: center;
 	}
+
+	.skills {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
 </style>
