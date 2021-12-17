@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { fly } from "svelte/transition";
-	import Card from "./components/Card.svelte";
+	import CardsGroup from "./components/CardsGroup.svelte";
+	import { Card } from "./types";
 
-	const cards = [
+	const cards: Card[] = [
 		{ path: "assets/logos/angular.png", title: "Angular" },
 		{ path: "assets/logos/nodejs.png", title: "NodeJs" },
 		{ path: "assets/logos/java.png", title: "Java" },
@@ -17,7 +18,7 @@
 		{ path: "assets/logos/blender.svg", title: "Blender" },
 	];
 
-	const backgrounds = [
+	const backgrounds: string[] = [
 		"https://raw.githubusercontent.com/Saar25/Lwjgl/master/docs/Amanecer.png",
 		"assets/backgrounds/ParticlesSphere.png",
 	];
@@ -74,11 +75,7 @@
 
 	<section class="skills content-section">
 		<span class="content-section-title">My Skills</span>
-		<section class="skills-body content-section-body">
-			{#each cards as card}
-				<Card {card} />
-			{/each}
-		</section>
+		<CardsGroup {cards} />
 	</section>
 </main>
 
@@ -135,7 +132,7 @@
 	}
 
 	.content-section {
-		padding: 50px 25%;
+		padding: 50px 25% 0;
 	}
 
 	.content-section-title {
@@ -145,16 +142,5 @@
 
 	.content-section-body {
 		font-size: 24px;
-	}
-
-	.skills-body {
-		display: grid;
-		grid-template-columns: repeat(5, 20%);
-		grid-row-gap: 10px;
-		justify-content: center;
-	}
-
-	.skills {
-		background-color: rgba(255, 255, 255, 0.2);
 	}
 </style>
