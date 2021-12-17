@@ -3,18 +3,18 @@
 	import Card from "./components/Card.svelte";
 
 	const cards = [
-		{ path: "assets/logos/angular-logo.png", title: "Angular" },
-		{ path: "assets/logos/nodejs-logo.png", title: "NodeJs" },
-		{ path: "assets/logos/java-logo.png", title: "Java" },
-		{ path: "assets/logos/kotlin-logo.svg", title: "Kotlin" },
-		{ path: "assets/logos/ts-logo.png", title: "Typescript" },
-		{ path: "assets/logos/sql-logo.png", title: "SQL" },
-		{ path: "assets/logos/react-logo.png", title: "React" },
-		{ path: "assets/logos/git-logo.png", title: "Git" },
-		{ path: "assets/logos/nestjs-logo.svg", title: "NestJs" },
-		{ path: "assets/logos/scss-logo.png", title: "Scss" },
-		{ path: "assets/logos/lwjgl-logo.svg", title: "Lwjgl" },
-		{ path: "assets/logos/blender-logo.svg", title: "Blender" },
+		{ path: "assets/logos/angular.png", title: "Angular" },
+		{ path: "assets/logos/nodejs.png", title: "NodeJs" },
+		{ path: "assets/logos/java.png", title: "Java" },
+		{ path: "assets/logos/kotlin.svg", title: "Kotlin" },
+		{ path: "assets/logos/ts.png", title: "Typescript" },
+		{ path: "assets/logos/sql.png", title: "SQL" },
+		{ path: "assets/logos/react.png", title: "React" },
+		{ path: "assets/logos/git.png", title: "Git" },
+		{ path: "assets/logos/nestjs.svg", title: "NestJs" },
+		{ path: "assets/logos/scss.png", title: "Scss" },
+		{ path: "assets/logos/lwjgl.svg", title: "Lwjgl" },
+		{ path: "assets/logos/blender.svg", title: "Blender" },
 	];
 
 	const backgrounds = [
