@@ -1,14 +1,17 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
 
-import NxWelcome from './nx-welcome';
-
-export function App() {
-  return (
-    <div>
-      <NxWelcome title="portfolio" />
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return (
+        <div className={styles['app-container']}>
+            <header className={styles['app-header']}>
+                <span>header</span>
+            </header>
+            <main className={styles['app-main']}>
+                <span>main</span>
+            </main>
+            <footer className={styles['app-footer']}>
+                <span>footer</span>
+            </footer>
+        </div>
+    );
+};
