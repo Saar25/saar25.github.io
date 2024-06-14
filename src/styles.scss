@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+#root {
+    --app-primary-color: #1a2130;
+    --app-secondary-color-1: #5a72a0;
+    --app-secondary-color-2: #83b4ff;
+    --app-light-color: #fdffe2;
+}
