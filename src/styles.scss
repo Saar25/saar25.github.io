@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
 }
 
 html,
@@ -10,8 +11,12 @@ body,
 }
 
 #root {
-    --app-primary-color: #1a2130;
+    --app-light-color: #fdffe2;
+    --app-dark-color: #211f20;
+    --app-primary-color: #a5bacb;
     --app-secondary-color-1: #5a72a0;
     --app-secondary-color-2: #83b4ff;
-    --app-light-color: #fdffe2;
+
+    --app-background-color: var(--app-dark-color);
+    --app-font-color: var(--app-light-color);
 }

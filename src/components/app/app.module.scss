@@ -1,27 +1,29 @@
-@use '../../variables.scss' as variables;
+@use 'variables.scss' as variables;
 
 .app-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: variables.$app-primary-color;
+    color: variables.$app-font-color;
+    background-color: variables.$app-background-color;
 
     .app-header {
         flex-shrink: 0;
         height: 70px;
-        background-color: variables.$app-secondary-color-1;
+        box-shadow: 0 0 10px black;
     }
 
     .app-main {
         flex-grow: 1;
-        background-color: variables.$app-background-color;
         overflow: auto;
-        padding: 20px 100px;
+        padding: 20px 300px;
     }
 
     .app-footer {
         flex-shrink: 0;
         height: 70px;
-        background-color: variables.$app-secondary-color-1;
+        box-shadow: 0 0 10px black;
+
+        display: none;
     }
 }

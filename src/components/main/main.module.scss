@@ -1,0 +1,42 @@
+@use "variables.scss";
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .main-section {
+        .main-section-title {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+
+            &::before, &::after {
+                content: '';
+                margin: auto 30px;
+                height: 1px;
+                flex-grow: 1;
+                background-color: variables.$app-primary-color;
+            }
+
+            &::before {
+                left: 0;
+                margin-left: 0;
+            }
+
+            &::after {
+                right: 0;
+                margin-right: 0;
+            }
+        }
+        .main-section-body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

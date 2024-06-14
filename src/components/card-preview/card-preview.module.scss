@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .card-preview-container {
     .card-preview-rotation {
         transition: 200ms;
@@ -11,7 +13,7 @@
         flex-direction: column;
 
         border-radius: 30px;
-        background-color: #2d2d2d;
+        background-color: variables.$app-dark-color;
         box-shadow: black 5px 5px 20px 0px;
     }
 
