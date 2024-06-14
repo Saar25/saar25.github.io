@@ -1,4 +1,4 @@
-@use '../variables.scss' as variables;
+@use '../../variables.scss' as variables;
 
 .app-container {
     height: 100%;
@@ -7,6 +7,7 @@
     color: variables.$app-primary-color;
 
     .app-header {
+        flex-shrink: 0;
         height: 70px;
         background-color: variables.$app-secondary-color-1;
     }
@@ -14,9 +15,12 @@
     .app-main {
         flex-grow: 1;
         background-color: variables.$app-background-color;
+        overflow: auto;
+        padding: 20px 100px;
     }
 
     .app-footer {
+        flex-shrink: 0;
         height: 70px;
         background-color: variables.$app-secondary-color-1;
     }

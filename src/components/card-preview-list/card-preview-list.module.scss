@@ -1,0 +1,6 @@
+.card-preview-list-container {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-row-gap: 10px;
+    justify-content: center;
+}
