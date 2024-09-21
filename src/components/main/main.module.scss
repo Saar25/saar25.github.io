@@ -1,10 +1,13 @@
-@use "variables.scss";
+@use 'variables.scss';
 
 .main-container {
+    flex-grow: 1;
+    overflow: auto;
+
     display: flex;
     flex-direction: column;
     gap: 100px;
-
+    padding: 20px 300px;
     .main-section {
         .main-section-title {
             position: relative;
@@ -16,7 +19,8 @@
             width: 100%;
             text-align: center;
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 content: '';
                 margin: auto 30px;
                 height: 1px;

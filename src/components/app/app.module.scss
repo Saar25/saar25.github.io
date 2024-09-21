@@ -2,12 +2,14 @@
 
 .app-container {
     height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     color: variables.$app-font-color;
     background-color: variables.$app-background-color;
 
     .app-header {
+        width: 100%;
         flex-shrink: 0;
         height: 70px;
         box-shadow: 0 0 10px black;
@@ -15,8 +17,9 @@
 
     .app-main {
         flex-grow: 1;
-        overflow: auto;
-        padding: 20px 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     .app-footer {
