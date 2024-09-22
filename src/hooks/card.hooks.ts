@@ -14,17 +14,17 @@ import blender from '../assets/logos/blender.svg';
 
 export const useCards = () => {
     return [
-        { title: 'Angular', image: angular.src },
-        { title: 'NodeJs', image: nodejs.src },
-        { title: 'Java', image: java.src },
-        { title: 'Kotlin', image: kotlin.src },
-        { title: 'Typescript', image: ts.src },
-        { title: 'SQL', image: sql.src },
-        { title: 'React', image: react.src },
-        { title: 'Git', image: git.src },
-        { title: 'NestJs', image: nestjs.src },
-        { title: 'Scss', image: scss.src },
-        { title: 'Lwjgl', image: lwjgl.src },
-        { title: 'Blender', image: blender.src },
+        { id: 0, title: 'Angular', image: angular.src },
+        { id: 2, title: 'NodeJs', image: nodejs.src },
+        { id: 3, title: 'Java', image: java.src },
+        { id: 4, title: 'Kotlin', image: kotlin.src },
+        { id: 5, title: 'Typescript', image: ts.src },
+        { id: 6, title: 'SQL', image: sql.src },
+        { id: 7, title: 'React', image: react.src },
+        { id: 8, title: 'Git', image: git.src },
+        { id: 9, title: 'NestJs', image: nestjs.src },
+        { id: 10, title: 'Scss', image: scss.src },
+        { id: 11, title: 'Lwjgl', image: lwjgl.src },
+        { id: 12, title: 'Blender', image: blender.src },
     ] as const satisfies Card[];
 };

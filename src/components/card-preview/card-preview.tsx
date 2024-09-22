@@ -2,7 +2,7 @@ import { Card } from '../../types/card.types';
 import styles from './card-preview.module.scss';
 
 export interface CardPreviewProps {
-    card: Card;
+    card: Readonly<Card>;
 }
 
 export const CardPreview = ({ card }: CardPreviewProps) => {
