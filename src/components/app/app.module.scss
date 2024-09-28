@@ -9,10 +9,22 @@
     background-color: variables.$app-background-color;
 
     .app-header {
+        position: relative;
+
         width: 100%;
         flex-shrink: 0;
         height: 70px;
-        box-shadow: 0 0 10px black;
+
+        &::after {
+            box-shadow: 0 10px 5px -5px black;
+            content: '';
+            width: calc(100% + 20px);
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            z-index: 1;
+        }
     }
 
     .app-main {
