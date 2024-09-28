@@ -1,7 +1,8 @@
 import { useCards } from '../../hooks/card.hooks';
 import { CardPreviewList } from '../card-preview-list/card-preview-list';
 import styles from './main.module.scss';
-import wave from '../../assets/wave.svg';
+import wave0 from '../../assets/wave-0.svg';
+import wave1 from '../../assets/wave-1.svg';
 
 export const Main = () => {
     const cards = useCards();
@@ -23,12 +24,25 @@ export const Main = () => {
                 </article>
             </section>
 
-            <img src={wave.src} width="100%" />
+            <img src={wave0.src} className={styles['main-wave-section']} />
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>My Skills</span>
                 <article className={styles['main-section-body']}>
                     <CardPreviewList cards={cards} />
+                </article>
+            </section>
+
+            <img src={wave1.src} className={styles['main-wave-section']} />
+
+            <section className={styles['main-section']}>
+                <span className={styles['main-section-title']}>lorem ipsum</span>
+                <article className={styles['main-section-body']}>
+                    <span>Lorem, ipsum dolor.</span>
+                    <span>Fuga, nemo non.</span>
+                    <span>Quasi, rem nisi.</span>
+                    <span>Expedita, ipsa asperiores.</span>
+                    <span>Minus, vel numquam!</span>
                 </article>
             </section>
         </div>
