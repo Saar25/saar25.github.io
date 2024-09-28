@@ -1,6 +1,11 @@
 .card-preview-list-container {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-row-gap: 10px;
-    justify-content: center;
+    padding: 50px;
+
+    .card-preview-list-swiper {
+        .card-preview-list-swiper-slide {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 30px;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 @use '../../styles/variables.scss';
 
 .card-preview-container {
+    width: 200px;
     .card-preview-rotation {
         transition: 200ms;
         margin: 30px 10px 0;
