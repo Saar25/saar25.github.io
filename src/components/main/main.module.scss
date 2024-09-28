@@ -6,9 +6,15 @@
 
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    padding: 20px 300px;
+    padding: 20px 0;
+
     .main-section {
+        padding: 0 300px;
+
+        &:nth-of-type(2) {
+            background-color: variables.$app-secondary-color-1;
+        }
+
         .main-section-title {
             position: relative;
             display: flex;

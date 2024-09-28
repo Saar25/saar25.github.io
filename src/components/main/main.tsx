@@ -1,6 +1,7 @@
 import { useCards } from '../../hooks/card.hooks';
 import { CardPreviewList } from '../card-preview-list/card-preview-list';
 import styles from './main.module.scss';
+import wave from '../../assets/wave.svg';
 
 export const Main = () => {
     const cards = useCards();
@@ -21,6 +22,8 @@ export const Main = () => {
                     </span>
                 </article>
             </section>
+
+            <img src={wave.src} width="100%" />
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>My Skills</span>
