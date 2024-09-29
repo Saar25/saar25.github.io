@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
 export const metadata: Metadata = {
-    title: 'Portfolio',
-    description: 'This is my portfolio website',
+    title: "Saar's Portfolio",
+    description: 'This is my portfolio',
 };
 
 const inter = Montserrat({

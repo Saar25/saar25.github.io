@@ -1,8 +1,8 @@
+import wave0 from '../../assets/wave-0.svg';
+import wave1 from '../../assets/wave-1.svg';
 import { useCards } from '../../hooks/card.hooks';
 import { CardPreviewList } from '../card-preview-list/card-preview-list';
 import styles from './main.module.scss';
-import wave0 from '../../assets/wave-0.svg';
-import wave1 from '../../assets/wave-1.svg';
 
 export const Main = () => {
     const cards = useCards();
@@ -13,14 +13,19 @@ export const Main = () => {
                 <article className={styles['main-section-title']}>
                     <span>About me</span>
                 </article>
-                <article className={styles['main-section-body']}>
+                <article className={`${styles['main-section-body']} ${styles['about-me']}`}>
                     <span>
-                        I am a full stack web developer, with experience in sprint-boot, nodejs, angular and vue.
+                        Hi, I'm Saar, a passionate Full-Stack Developer with a deep love for crafting scalable,
+                        efficient, and user-centric web applications. With expertise in both frontend and backend
+                        technologies, I enjoy bridging the gap between beautiful, intuitive interfaces and robust,
+                        high-performance server-side systems.
                     </span>
                     <span>
-                        I like using Opengl and Lwjgl as a hobby, I have created 2 engines using Lwjgl, the most recent
-                        one is still under development.
+                        I thrive in collaborative environments and am always excited about learning new tools and
+                        technologies to deliver impactful solutions. When I'm not coding, you'll find me exploring
+                        open-source projects or learning about the latest in software development trends.
                     </span>
+                    <span>Let's build something amazing together!</span>
                 </article>
             </section>
 
@@ -36,13 +41,10 @@ export const Main = () => {
             <img src={wave1.src} className={styles['main-wave-section']} />
 
             <section className={styles['main-section']}>
-                <span className={styles['main-section-title']}>lorem ipsum</span>
+                <span className={styles['main-section-title']}>Contact me</span>
                 <article className={styles['main-section-body']}>
-                    <span>Lorem, ipsum dolor.</span>
-                    <span>Fuga, nemo non.</span>
-                    <span>Quasi, rem nisi.</span>
-                    <span>Expedita, ipsa asperiores.</span>
-                    <span>Minus, vel numquam!</span>
+                    <span>Email: saartako25@gmail.com</span>
+                    <span>LinkedIn: www.linkedin.com/in/saar-tako-304b67215</span>
                 </article>
             </section>
         </div>

@@ -67,6 +67,11 @@
         .main-section-body {
             display: flex;
             flex-direction: column;
+
+            &.about-me {
+                gap: 20px;
+                padding: 20px 100px;
+            }
         }
     }
 }
