@@ -1,9 +1,7 @@
 'use client';
 
 import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Card } from '../../types/card.types';
 import { CardPreview } from '../card-preview/card-preview';
@@ -18,9 +16,8 @@ export const CardPreviewList = ({ cards }: CardPreviewListProps) => {
         <div className={styles['card-preview-list-container']}>
             <Swiper
                 className={styles['card-preview-list-swiper']}
-                modules={[Navigation, Autoplay]}
+                modules={[Autoplay]}
                 loop={true}
-                navigation={true}
                 centeredSlides={true}
                 autoplay={{ delay: 2500 }}
                 slidesPerView={5}
