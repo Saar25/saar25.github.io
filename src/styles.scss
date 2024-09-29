@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+#root {
+    --app-light-color: #fdffe2;
+    --app-dark-color: #211f20;
+    --app-primary-color: #a5bacb;
+    --app-secondary-color-1: #5a72a0;
+    --app-secondary-color-2: #83b4ff;
+
+    --app-background-color: var(--app-dark-color);
+    --app-font-color: var(--app-light-color);
+}

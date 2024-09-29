@@ -1,0 +1,44 @@
+@use '../../styles/variables.scss' as variables;
+
+.app-container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: variables.$app-font-color;
+    background-color: variables.$app-background-color;
+
+    .app-header {
+        position: relative;
+
+        width: 100%;
+        flex-shrink: 0;
+        height: 70px;
+
+        &::after {
+            box-shadow: 0 10px 5px -5px black;
+            content: '';
+            width: calc(100% + 20px);
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            z-index: 2;
+        }
+    }
+
+    .app-main {
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-footer {
+        flex-shrink: 0;
+        height: 70px;
+        box-shadow: 0 0 10px black;
+
+        display: none;
+    }
+}

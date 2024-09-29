@@ -1,0 +1,11 @@
+.card-preview-list-container {
+    padding: 50px;
+
+    .card-preview-list-swiper {
+        .card-preview-list-swiper-slide {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 30px;
+        }
+    }
+}

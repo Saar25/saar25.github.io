@@ -1,15 +1,43 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
   "include": [
-    "src/**/*"
+    "src",
+    "./dist/types/**/*.ts",
+    "./next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules/*",
-    "__sapper__/*",
-    "public/*"
-  ],
-  "compilerOptions": {
-    "isolatedModules": false,
-    "importsNotUsedAsValues": "remove",
-  }
+    "./node_modules"
+  ]
 }
