@@ -1,4 +1,4 @@
-@use 'variables.scss';
+@use '../../styles/variables.scss';
 
 .main-container {
     flex-grow: 1;
@@ -6,9 +6,34 @@
 
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    padding: 20px 300px;
+
+    .main-wave-section {
+        width: 100%;
+
+        &:nth-of-type(1) {
+            background-color: variables.$app-dark-color;
+        }
+
+        &:nth-of-type(2) {
+            background-color: variables.$app-secondary-color-1;
+        }
+    }
+
     .main-section {
+        padding: 20px 300px;
+
+        &:nth-of-type(1) {
+            background-color: variables.$app-dark-color;
+        }
+
+        &:nth-of-type(2) {
+            background-color: variables.$app-secondary-color-1;
+        }
+
+        &:nth-of-type(3) {
+            background-color: variables.$app-dark-color;
+        }
+
         .main-section-title {
             position: relative;
             display: flex;
@@ -38,9 +63,15 @@
                 margin-right: 0;
             }
         }
+
         .main-section-body {
             display: flex;
             flex-direction: column;
+
+            &.about-me {
+                gap: 20px;
+                padding: 20px 100px;
+            }
         }
     }
 }

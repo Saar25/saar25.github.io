@@ -1,5 +1,6 @@
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
+import { Mesh, ShaderMaterial } from 'three';
 
 const fragmentShader = `
 #define NUM_OCTAVES 6
@@ -79,11 +80,14 @@ void main(void) {
 }`;
 
 export const FbmPainter = () => {
-    const mesh = useRef();
+    const mesh = useRef<Mesh>(null);
 
     useFrame(({ clock }) => {
-        // @ts-ignore
-        mesh.current.material.uniforms.u_time = { value: clock.getElapsedTime() };
+        if (mesh.current) {
+            const material = mesh.current.material as ShaderMaterial;
+
+            material.uniforms.u_time = { value: clock.getElapsedTime() };
+        }
     });
 
     return (
