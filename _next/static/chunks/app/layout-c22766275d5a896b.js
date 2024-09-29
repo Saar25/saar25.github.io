@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{3552:function(e,n,t){Promise.resolve().then(t.t.bind(t,1778,23))},1778:function(e){e.exports={style:{fontFamily:"'__Montserrat_0804eb'",fontStyle:"normal"},className:"__className_0804eb"}}},function(e){e.O(0,[429,971,23,744],function(){return e(e.s=3552)}),_N_E=e.O()}]);
