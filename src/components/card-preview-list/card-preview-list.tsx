@@ -20,7 +20,7 @@ export const CardPreviewList = ({ cards }: CardPreviewListProps) => {
                 loop={true}
                 centeredSlides={true}
                 autoplay={{ delay: 2500 }}
-                slidesPerView={5}
+                slidesPerView={4.5}
             >
                 {cards.map(card => (
                     <SwiperSlide className={styles['card-preview-list-swiper-slide']}>

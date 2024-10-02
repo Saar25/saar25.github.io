@@ -20,7 +20,11 @@
     }
 
     .main-section {
-        padding: 20px 300px;
+        padding: 20px min(20%, 300px);
+
+        @media only screen and (max-width: 700px) {
+            padding: 20px 10px;
+        }
 
         &:nth-of-type(1) {
             background-color: variables.$app-dark-color;
@@ -70,7 +74,7 @@
 
             &.about-me {
                 gap: 20px;
-                padding: 20px 100px;
+                padding: 20px min(10%, 100px);
             }
         }
     }
