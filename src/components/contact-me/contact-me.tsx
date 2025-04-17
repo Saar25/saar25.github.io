@@ -1,6 +1,6 @@
 'use client';
 
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa6';
 import styles from './contact-me.module.scss';
 
 export interface ContactMeProps {
@@ -21,6 +21,10 @@ export const ContactMe = ({ showText }: ContactMeProps) => {
             <a href="https://www.linkedin.com/in/saar-tako-304b67215" className={styles['contact-me-href']}>
                 <FaLinkedin size={28} />
                 {showText && <span>saar-tako-304b67215</span>}
+            </a>
+            <a href="https://t.me/iamsaart" className={styles['contact-me-href']}>
+                <FaTelegram size={28} />
+                {showText && <span>@iamsaart</span>}
             </a>
         </div>
     );
