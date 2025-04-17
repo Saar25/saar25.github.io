@@ -1,8 +1,9 @@
 import wave0 from '../../assets/wave-0.svg';
 import wave1 from '../../assets/wave-1.svg';
+import { skills } from '../../constants';
 import { useCards } from '../../hooks/card.hooks';
-import { CardPreviewList } from '../card-preview-list/card-preview-list';
 import { ContactMe } from '../contact-me/contact-me';
+import { SkillPreviewList } from '../skill-preview-list/skill-preview-list';
 import styles from './main.module.scss';
 
 export const Main = () => {
@@ -38,8 +39,8 @@ export const Main = () => {
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>My Skills</span>
-                <article className={styles['main-section-body']}>
-                    <CardPreviewList cards={cards} />
+                <article className={`${styles['main-section-body']} ${styles['my-skills']}`}>
+                    <SkillPreviewList skills={skills} />
                 </article>
             </section>
 

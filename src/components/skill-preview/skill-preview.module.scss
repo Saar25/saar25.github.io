@@ -1,0 +1,42 @@
+@use '../../styles/variables.scss';
+
+.skill-preview-container {
+    .skill-preview-floating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+
+        transition: 200ms;
+        margin: 1rem 0;
+    }
+
+    &:hover {
+        .skill-preview-floating {
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .skill-preview-logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        padding: 1.5rem;
+
+        background-color: variables.$app-dark-color;
+        box-shadow: black 5px 5px 20px 0px;
+
+        .skill-preview-logo {
+            width: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px black);
+        }
+    }
+}
