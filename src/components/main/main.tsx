@@ -16,17 +16,21 @@ export const Main = () => {
                 </article>
                 <article className={`${styles['main-section-body']} ${styles['about-me']}`}>
                     <span>
-                        Hi, I'm Saar, a passionate Full-Stack Developer with a deep love for crafting scalable,
-                        efficient, and user-centric web applications. With expertise in both frontend and backend
-                        technologies, I enjoy bridging the gap between beautiful, intuitive interfaces and robust,
-                        high-performance server-side systems.
+                        Hi! I'm Saar, a passionate and experienced Full-Stack Developer with years of hands-on work
+                        building and maintaining large-scale projects—both frontend and backend. I've worked with a wide
+                        range of technologies and enjoy optimizing systems using smart, efficient techniques.
                     </span>
                     <span>
-                        I thrive in collaborative environments and am always excited about learning new tools and
-                        technologies to deliver impactful solutions. When I'm not coding, you'll find me exploring
-                        open-source projects or learning about the latest in software development trends.
+                        I bring strong technical and interpersonal skills to the table. I'm a fast learner and creative
+                        problem solver, able to build fully featured systems quickly and with high quality. I also
+                        specialize in maintaining, developing, and optimizing existing platforms, elevating them to a
+                        professional, production-ready level.
                     </span>
-                    <span>Let's build something amazing together!</span>
+                    <span>
+                        I'm also deeply interested in other areas of the programming world, including 3D graphics, game
+                        development, low-level systems, and software design and architecture. You can check out some of
+                        the projects I've worked on over on my GitHub page.
+                    </span>
                 </article>
             </section>
 

@@ -21,6 +21,17 @@ export const CardPreviewList = ({ cards }: CardPreviewListProps) => {
                 centeredSlides={true}
                 autoplay={{ delay: 2500 }}
                 slidesPerView={4.5}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1.5,
+                    },
+                    400: {
+                        slidesPerView: 2,
+                    },
+                    1000: {
+                        slidesPerView: 4,
+                    },
+                }}
             >
                 {cards.map(card => (
                     <SwiperSlide className={styles['card-preview-list-swiper-slide']} key={card.id}>
