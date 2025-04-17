@@ -23,7 +23,7 @@ export const CardPreviewList = ({ cards }: CardPreviewListProps) => {
                 slidesPerView={4.5}
             >
                 {cards.map(card => (
-                    <SwiperSlide className={styles['card-preview-list-swiper-slide']}>
+                    <SwiperSlide className={styles['card-preview-list-swiper-slide']} key={card.id}>
                         <CardPreview card={card} key={card.id} />
                     </SwiperSlide>
                 ))}

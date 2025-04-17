@@ -1,3 +1,4 @@
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import wave0 from '../../assets/wave-0.svg';
 import wave1 from '../../assets/wave-1.svg';
 import { useCards } from '../../hooks/card.hooks';
@@ -42,9 +43,19 @@ export const Main = () => {
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>Contact me</span>
-                <article className={styles['main-section-body']}>
-                    <span>Email: saartako25@gmail.com</span>
-                    <span>LinkedIn: www.linkedin.com/in/saar-tako-304b67215</span>
+                <article className={`${styles['main-section-body']} ${styles['contact-me']}`}>
+                    <a href="mailto:saartako25@gmail.com">
+                        <FaEnvelope size={28} />
+                        <span>saartako25@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/Saar25">
+                        <FaGithub size={28} />
+                        <span>Saar25</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saar-tako-304b67215">
+                        <FaLinkedin size={28} />
+                        <span>saar-tako-304b67215</span>
+                    </a>
                 </article>
             </section>
         </div>

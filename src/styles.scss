@@ -19,3 +19,7 @@ body,
     --app-background-color: var(--app-dark-color);
     --app-font-color: var(--app-light-color);
 }
+
+a {
+    color: unset;
+}
