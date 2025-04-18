@@ -1,14 +1,11 @@
 import wave0 from '../../assets/wave-0.svg';
 import wave1 from '../../assets/wave-1.svg';
 import { skills } from '../../constants';
-import { useCards } from '../../hooks/card.hooks';
 import { ContactMe } from '../contact-me/contact-me';
 import { SkillPreviewList } from '../skill-preview-list/skill-preview-list';
 import styles from './main.module.scss';
 
 export const Main = () => {
-    const cards = useCards();
-
     return (
         <div className={styles['main-container']}>
             <section className={styles['main-section']}>
