@@ -12,7 +12,7 @@ export const MyIntro = ({}: MyIntroProps) => {
             <span className={styles['my-intro-label-name']}>Saar Jacob Tako</span>
             <TypewriterComponent
                 options={{
-                    strings: ['< Software Engineer \\>', '< Full stack developer \\>', '< Tech Enthusiast \\>'],
+                    strings: ['< Software Engineer \\>', '< Full Stack Developer \\>', '< Tech Enthusiastic \\>'],
                     autoStart: true,
                     loop: true,
                     wrapperClassName: styles['my-intro-label-typing'],
