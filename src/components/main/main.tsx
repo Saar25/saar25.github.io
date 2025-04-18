@@ -32,7 +32,7 @@ export const Main = () => {
                 </article>
             </section>
 
-            <img src={wave0.src} className={styles['main-wave-section']} />
+            <img src={wave0.src} className={styles['main-wave']} />
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>My Skills</span>
@@ -41,7 +41,7 @@ export const Main = () => {
                 </article>
             </section>
 
-            <img src={wave1.src} className={styles['main-wave-section']} />
+            <img src={wave1.src} className={styles['main-wave']} />
 
             <section className={styles['main-section']}>
                 <span className={styles['main-section-title']}>Contact me</span>

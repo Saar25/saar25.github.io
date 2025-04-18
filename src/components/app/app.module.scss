@@ -9,7 +9,7 @@
     background-color: variables.$app-background-color;
 
     .app-header {
-        position: relative;
+        position: fixed;
 
         width: 100%;
         flex-shrink: 0;
@@ -23,7 +23,7 @@
             display: none;
         }
 
-        &::after {
+        /*&::after {
             box-shadow: 0 10px 5px -5px black;
             content: '';
             width: calc(100% + 20px);
@@ -32,7 +32,7 @@
             bottom: 0;
             left: -10px;
             z-index: 2;
-        }
+        }*/
 
         .app-header-section {
             padding: 0 2rem;
