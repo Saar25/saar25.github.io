@@ -1,0 +1,16 @@
+.my-intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem min(20%, 300px);
+    height: 100%;
+
+    .my-intro-label-hello {
+        font-size: 2rem;
+    }
+
+    .my-intro-label-name {
+        font-size: 4rem;
+    }
+}
