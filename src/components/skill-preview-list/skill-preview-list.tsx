@@ -19,7 +19,7 @@ export const SkillPreviewList = ({ skills }: SkillPreviewListProps) => {
             </span>
             <div className={styles['skill-preview-list-items']}>
                 {skills.map(skill => (
-                    <SkillPreview skill={skill} />
+                    <SkillPreview skill={skill} key={skill} />
                 ))}
             </div>
             <span className={styles['skill-preview-list-label']}>
