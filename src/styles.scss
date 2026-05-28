@@ -1,6 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-size: 1.25rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -20,6 +27,33 @@ body,
     --app-font-color: var(--app-light-color);
 }
 
+::selection {
+    background-color: var(--app-secondary-color-2);
+    color: var(--app-dark-color);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--app-dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--app-secondary-color-1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--app-secondary-color-2);
+}
+
 a {
     color: unset;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
 }

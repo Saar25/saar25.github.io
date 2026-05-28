@@ -5,3 +5,16 @@ $app-secondary-color-1: var(--app-secondary-color-1);
 $app-secondary-color-2: var(--app-secondary-color-2);
 $app-background-color: var(--app-background-color);
 $app-font-color: var(--app-font-color);
+
+$transition-fast: 200ms ease;
+$transition-normal: 300ms ease;
+$transition-slow: 500ms ease;
+
+$font-size-sm: 0.875rem;
+$font-size-base: 1.25rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+$font-size-2xl: 3rem;
+$font-size-3xl: 5rem;
+
+$header-height: 70px;

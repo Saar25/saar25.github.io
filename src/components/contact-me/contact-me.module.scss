@@ -1,19 +1,37 @@
-.contact-me-container {
-    padding: 1rem min(10%, 100px);
+@use '../../styles/variables.scss';
 
+.contact-me-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-
-    @media only screen and (max-width: 700px) {
-        flex-direction: column;
-    }
+    gap: 2rem;
+    flex-wrap: wrap;
 
     .contact-me-href {
-        text-align: center;
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.75rem;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.75rem;
+        background-color: rgba(variables.$app-light-color, 0.05);
+        border: 1px solid rgba(variables.$app-primary-color, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgba(variables.$app-secondary-color-2, 0.1);
+            border-color: rgba(variables.$app-secondary-color-2, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(variables.$app-secondary-color-2, 0.15);
+        }
+
+        span {
+            font-size: 0.925rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
     }
 }

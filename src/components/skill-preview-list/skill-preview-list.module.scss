@@ -4,13 +4,27 @@
     text-align: center;
     gap: 3rem;
 
+    .skill-preview-list-label {
+        font-size: 1rem;
+        line-height: 1.7;
+        opacity: 0.85;
+    }
+
     .skill-preview-list-items {
-        /* display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        justify-content: center; */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
+
+        .skill-preview-list-item {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+
+            &--visible {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
     }
 }

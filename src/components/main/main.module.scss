@@ -3,12 +3,12 @@
 .main-container {
     flex-grow: 1;
     overflow: auto;
-
     display: flex;
     flex-direction: column;
 
     >.main-wave {
         width: 100%;
+        display: block;
 
         &:nth-of-type(1) {
             background-color: variables.$app-dark-color;
@@ -23,10 +23,9 @@
         min-height: 100vh;
         flex-shrink: 0;
         box-sizing: border-box;
-
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
 
         &:nth-of-type(1) {
             background-color: variables.$app-dark-color;
@@ -42,20 +41,26 @@
 
         &.contact-me {
             min-height: unset;
+
+            .main-section-content {
+                padding: 4rem min(20%, 300px);
+            }
         }
 
         .main-section-content {
             padding: 20px min(20%, 300px);
+            animation: fadeInUp 0.6s ease both;
 
             .main-section-title {
                 position: relative;
                 display: flex;
                 flex-direction: row;
-
+                align-items: center;
                 font-size: 1.5rem;
                 font-weight: 600;
                 width: 100%;
                 text-align: center;
+                margin-bottom: 2rem;
 
                 &::before,
                 &::after {
@@ -91,16 +96,19 @@
                     flex-direction: row;
                     justify-content: center;
                     gap: 1rem;
-
-                    a {
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        gap: 0.5rem;
-                    }
                 }
             }
-
         }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -5,11 +5,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 0.75rem;
         flex-direction: column;
         text-align: center;
-
-        transition: 200ms;
+        transition: transform 0.3s ease, margin 0.3s ease;
         margin: 1rem 0;
     }
 
@@ -17,6 +16,18 @@
         .skill-preview-floating {
             margin-top: 0;
             margin-bottom: 2rem;
+            transform: translateY(-8px);
+        }
+
+        .skill-preview-logo-container {
+            box-shadow:
+                black 5px 5px 20px 0px,
+                0 0 20px rgba(variables.$app-secondary-color-2, 0.3);
+            transform: scale(1.1);
+        }
+
+        .skill-preview-title {
+            color: variables.$app-secondary-color-2;
         }
     }
 
@@ -24,19 +35,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        width: 3rem;
-        height: 3rem;
-        border-radius: 3rem;
-        padding: 1.5rem;
-
+        width: 5rem;
+        height: 5rem;
+        border-radius: 1.25rem;
+        padding: 1rem;
         background-color: variables.$app-dark-color;
         box-shadow: black 5px 5px 20px 0px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         .skill-preview-logo {
             width: 100%;
             object-fit: contain;
             filter: drop-shadow(0 0 5px black);
         }
+    }
+
+    .skill-preview-title {
+        font-size: 1rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
     }
 }
