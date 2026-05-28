@@ -35,10 +35,7 @@ export const MyIntro = () => {
                     systems, and software architecture. You can explore some of my projects on my GitHub page.
                 </span>
             </div>
-            <div className={styles['my-intro-image-wrapper']}>
-                <div className={styles['my-intro-image-glow']} />
-                <img src={me.src} alt="Saar Jacob Tako" className={styles['my-intro-image']} />
-            </div>
+            <img src={me.src} alt="Saar Jacob Tako" className={styles['my-intro-image']} />
         </article>
     );
 };
